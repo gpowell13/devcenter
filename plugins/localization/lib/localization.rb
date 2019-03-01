@@ -110,7 +110,7 @@ module Jekyll
 
       # Default lang should not have a subfolder
       if current_lang == default_lang
-        @url = @url.gsub(/\/#{current_lang}/, '')
+        @url = @url.gsub(/^\/#{current_lang}/, '')
       elsif @url == '/'
         @url = "/#{current_lang}"
       end
@@ -158,7 +158,7 @@ module Jekyll
 
       # Default lang should not have a subfolder
       if current_lang == default_lang
-        @url = @url.gsub(/\/#{current_lang}/, '')
+        @url = @url.gsub(/^\/#{current_lang}/, '')
       end
       @url
     end
