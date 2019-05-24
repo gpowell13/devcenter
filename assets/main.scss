@@ -89,8 +89,8 @@ header.top-bar {
 
 				img {
 					display: block;
-					width: 24px;
-					height: 24px;
+					width: 144px;
+					height: auto;
 				}
 			}
 
@@ -279,6 +279,10 @@ nav#side-menu {
 			display: flex;
 			flex-direction: column;
 
+			li.menu-item, a {
+				padding-left: 1rem;
+			}
+
 			button.menu-list-opener, button.menu-list-opener-1, button.menu-list-opener-2, button.menu-list-opener-3, button.menu-list-opener-4, button.menu-list-opener-5, button.menu-list-opener-6, button.menu-list-opener-7, button.menu-list-opener-8, button.menu-list-opener-9, button.menu-list-opener-10, button.menu-list-opener-11, button.menu-list-opener-12, button.menu-list-opener-13, button.menu-list-opener-14, button.menu-list-opener-15, button.menu-list-opener-16, a {
 				display: flex;
 				margin-top: .625em;
@@ -298,7 +302,7 @@ nav#side-menu {
 				}
 			}
 
-			button.menu-list-opener, button.menu-list-opener-1, button.menu-list-opener-2, button.menu-list-opener-3, button.menu-list-opener-4, button.menu-list-opener-5, button.menu-list-opener-6, button.menu-list-opener-7, button.menu-list-opener-8, button.menu-list-opener-9, button.menu-list-opener-10, button.menu-list-opener-11, button.menu-list-opener-12, button.menu-list-opener-13, button.menu-list-opener-14, button.menu-list-opener-15, button.menu-list-opener-16, button.menu-list-opener-5, button.menu-list-opener-6, button.menu-list-opener-7, button.menu-list-opener-8, button.menu-list-opener-9, button.menu-list-opener-10, button.menu-list-opener-11, button.menu-list-opener-12, button.menu-list-opener-13, button.menu-list-opener-14, button.menu-list-opener-15, button.menu-list-opener-16 {
+			 button.menu-list-opener, button.menu-list-opener-1, button.menu-list-opener-2, button.menu-list-opener-3, button.menu-list-opener-4, button.menu-list-opener-5, button.menu-list-opener-6, button.menu-list-opener-7, button.menu-list-opener-8, button.menu-list-opener-9, button.menu-list-opener-10, button.menu-list-opener-11, button.menu-list-opener-12, button.menu-list-opener-13, button.menu-list-opener-14, button.menu-list-opener-15, button.menu-list-opener-16 {
 				border: none;
 				padding: 0;
 				text-align: left;
@@ -333,6 +337,11 @@ nav#side-menu {
 				}
 			}
 
+
+			button.menu-list-opener {
+				padding: 0 0 0 1rem;
+			}
+
 			button.menu-list-opener-1 {
 
 				&:before {
@@ -357,7 +366,7 @@ nav#side-menu {
 			button.menu-list-opener-4 {
 
 				&:before {
-					content: url(/assets/logos/icons/anchor.svg);
+					content: url(/assets/logos/icons/webhooks.svg);
 				}
 			}
 
@@ -953,7 +962,7 @@ footer {
 				li.menu-item {
 					border-top: .1rem solid rgba(0, 0, 0, .07);
 
-					button.menu-list-opener-0, button.menu-list-opener-1, button.menu-list-opener-2, button.menu-list-opener-3, button.menu-list-opener-4, a {
+					button.menu-list-opener, button.menu-list-opener-1, button.menu-list-opener-2, button.menu-list-opener-3, button.menu-list-opener-4, button.menu-list-opener-5, button.menu-list-opener-6, button.menu-list-opener-7, button.menu-list-opener-8, button.menu-list-opener-9, button.menu-list-opener-10, button.menu-list-opener-11, button.menu-list-opener-12, button.menu-list-opener-13, button.menu-list-opener-14, button.menu-list-opener-15, button.menu-list-opener-16, a {
 						margin-top: 0;
 						margin-bottom: 0;
 						padding: 1.2rem $spacing-default-horizontal;
