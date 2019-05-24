@@ -69,14 +69,12 @@
             <button class="search-clear material-icon" onclick="clearSearchField()"></button>
           </div>
         </div>
-        <div class="dropdown">
-          <button class="dropbtn">
+        <div class="lang-selector">
             {% if page.lang == 'jp' %}
               <a href="{{ page.url_without_lang }}" class="active">English</a>
             {% elsif page.lang == 'en' %}
               <a href="/jp{{ page.url_without_lang }}" class="active">日本語</a>
             {% endif %}
-          </button>
         </div>
         <a class="source-code" href="{{ site.data.basic_info.source_code_url }}" target="_blank">
           <object type="image/svg+xml" data="/assets/logos/icons/github.svg" class="source-host-logo"></object>
