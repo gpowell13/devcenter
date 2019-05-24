@@ -9,7 +9,11 @@
 				<a href="{{ item.url }}" title="{{ item.title }}">{{ item.title }}</a>
 			{% endif %}
 		{% else %}
-			<button class="menu-list-opener" onclick="toggleMenuListOpener(event)">{{ item.title }}</button>
+			{% if item.title == "Signing up" or item.title == "Adding a new app" or item.title == "iOS code signing" or item.title == "Android code signing" or item.title == "Triggering builds" or item.title == "Organizations" or item.title == "iOS deployment" or item.title == "Android deployment" or item.title == "Xamarin" or item.title == "Docker" or item.title == "Fastlane" or item.title == "Deployment Tutorials" %}
+					<button class="menu-list-opener" onclick="toggleMenuListOpener(event)">{{ item.title }}</button>
+			{% elsif forloop.index < 17 %}
+					<button class="menu-list-opener-{{ forloop.index }}" onclick="toggleMenuListOpener(event)">{{ item.title }}</button>
+			{% endif %}
 		{% endif %}
 		{% if item.children %}
 			{% assign menu = item.children %}

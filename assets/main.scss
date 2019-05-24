@@ -279,7 +279,7 @@ nav#side-menu {
 			display: flex;
 			flex-direction: column;
 
-			button.menu-list-opener, a {
+			button.menu-list-opener, button.menu-list-opener-1, button.menu-list-opener-2, button.menu-list-opener-3, button.menu-list-opener-4, button.menu-list-opener-5, button.menu-list-opener-6, button.menu-list-opener-7, button.menu-list-opener-8, button.menu-list-opener-9, button.menu-list-opener-10, button.menu-list-opener-11, button.menu-list-opener-12, button.menu-list-opener-13, button.menu-list-opener-14, button.menu-list-opener-15, button.menu-list-opener-16, a {
 				display: flex;
 				margin-top: .625em;
 				margin-bottom: .625em;
@@ -298,7 +298,7 @@ nav#side-menu {
 				}
 			}
 
-			button.menu-list-opener {
+			button.menu-list-opener, button.menu-list-opener-1, button.menu-list-opener-2, button.menu-list-opener-3, button.menu-list-opener-4, button.menu-list-opener-5, button.menu-list-opener-6, button.menu-list-opener-7, button.menu-list-opener-8, button.menu-list-opener-9, button.menu-list-opener-10, button.menu-list-opener-11, button.menu-list-opener-12, button.menu-list-opener-13, button.menu-list-opener-14, button.menu-list-opener-15, button.menu-list-opener-16, button.menu-list-opener-5, button.menu-list-opener-6, button.menu-list-opener-7, button.menu-list-opener-8, button.menu-list-opener-9, button.menu-list-opener-10, button.menu-list-opener-11, button.menu-list-opener-12, button.menu-list-opener-13, button.menu-list-opener-14, button.menu-list-opener-15, button.menu-list-opener-16 {
 				border: none;
 				padding: 0;
 				text-align: left;
@@ -319,6 +319,10 @@ nav#side-menu {
 					direction: ltr;
 				}
 
+				&:before {
+					margin-right: 1rem;
+					transform: translateY(-0.2rem);
+				}
 
 				&.open:after {
 					transform: translateY(0.1rem) rotate(-90deg);
@@ -329,11 +333,123 @@ nav#side-menu {
 				}
 			}
 
+			button.menu-list-opener-1 {
+
+				&:before {
+					content: url(/assets/logos/icons/getting-started.svg);
+				}
+			}
+
+			button.menu-list-opener-2 {
+
+				&:before {
+					content: url(/assets/logos/icons/cpu.svg);
+				}
+			}
+
+			button.menu-list-opener-3 {
+
+				&:before {
+					content: url(/assets/logos/icons/dudes.svg);
+				}
+			}
+
+			button.menu-list-opener-4 {
+
+				&:before {
+					content: url(/assets/logos/icons/anchor.svg);
+				}
+			}
+
+			button.menu-list-opener-5 {
+
+				&:before {
+					content: url(/assets/logos/icons/workflow.svg);
+				}
+			}
+
+			button.menu-list-opener-6 {
+
+				&:before {
+					content: url(/assets/logos/icons/build.svg);
+				}
+			}
+
+			button.menu-list-opener-7 {
+
+				&:before {
+					content: url(/assets/logos/icons/code-signing.svg);
+				}
+			}
+
+ 			button.menu-list-opener-8 {
+
+ 				&:before {
+ 					content: url(/assets/logos/icons/cache.svg);
+ 				}
+ 			}
+
+			button.menu-list-opener-9 {
+
+				&:before {
+					content: url(/assets/logos/icons/testing.svg);
+				}
+			}
+
+			button.menu-list-opener-10 {
+
+				&:before {
+					content: url(/assets/logos/icons/deployment.svg);
+				}
+			}
+
+			button.menu-list-opener-11 {
+
+				&:before {
+					content: url(/assets/logos/icons/build.svg);
+				}
+			}
+
+			button.menu-list-opener-12 {
+
+				&:before {
+					content: url(/assets/logos/icons/window.svg);
+				}
+			}
+
+			button.menu-list-opener-13 {
+
+				&:before {
+					content: url(/assets/logos/icons/info_main.svg);
+				}
+			}
+
+			button.menu-list-opener-14 {
+
+				&:before {
+					content: url(/assets/logos/icons/lightbulb_main.svg);
+				}
+			}
+
+			button.menu-list-opener-15 {
+
+				&:before {
+					content: url(/assets/logos/icons/bug.svg);
+				}
+			}
+
+			button.menu-list-opener-16 {
+
+				&:before {
+					content: url(/assets/logos/icons/code.svg);
+				}
+			}
+
 			a {
 				text-decoration: none;
 			}
 
-			button.menu-list-opener:not(.open) + ol.menu-list {
+			button.menu-list-opener:not(.open) + ol.menu-list, button.menu-list-opener-1:not(.open) + ol.menu-list, button.menu-list-opener-2:not(.open) + ol.menu-list, button.menu-list-opener-3:not(.open) + ol.menu-list, button.menu-list-opener-4:not(.open) + ol.menu-list, button.menu-list-opener-5:not(.open) + ol.menu-list, button.menu-list-opener-6:not(.open) + ol.menu-list, button.menu-list-opener-7:not(.open) + ol.menu-list, button.menu-list-opener-8:not(.open) + ol.menu-list, button.menu-list-opener-9:not(.open) + ol.menu-list, button.menu-list-opener-10:not(.open) + ol.menu-list, button.menu-list-opener-11:not(.open) + ol.menu-list, button.menu-list-opener-12:not(.open) + ol.menu-list, button.menu-list-opener-13:not(.open) + ol.menu-list, button.menu-list-opener-14:not(.open) + ol.menu-list, button.menu-list-opener-15:not(.open) + ol.menu-list, button.menu-list-opener-16:not(.open) + ol.menu-list, {
 				display: none;
 			}
 		}
@@ -349,35 +465,6 @@ main.content {
 	font-size: 1.5rem;
 	line-height: 1.5;
 	-webkit-print-color-adjust: exact;
-
-  .block {
-	  width: 180px;
-	  height: 150px;
-		margin: 3rem 1.5rem;
-	  border-radius: 8px;
-	  box-shadow: 0 2px 12px 0 rgba(0, 0, 0, 0.06);
-	  border: solid 1px #ececec;
-	  background-color: #ffffff;
-		display: inline-block;
-		padding: 15px;
-
-		a {
-			font-size: 1.8rem;
-			font-weight: bold;
-			font-style: normal;
-			font-stretch: normal;
-			line-height: 1.4;
-			letter-spacing: normal;
-			color: #683d87;
-			text-decoration: none;
-		}
-	}
-
-	.container  {
-	  text-align: center;
-		width: 100%;
-		border-top: 1px #ececec;
-	}
 
 h1, h2, h3, h4 {
 	letter-spacing: 0.2px;
@@ -866,7 +953,7 @@ footer {
 				li.menu-item {
 					border-top: .1rem solid rgba(0, 0, 0, .07);
 
-					button.menu-list-opener, a {
+					button.menu-list-opener-0, button.menu-list-opener-1, button.menu-list-opener-2, button.menu-list-opener-3, button.menu-list-opener-4, a {
 						margin-top: 0;
 						margin-bottom: 0;
 						padding: 1.2rem $spacing-default-horizontal;
